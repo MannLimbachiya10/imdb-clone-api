@@ -6,18 +6,24 @@
 
 pip install -r requirements.txt
 
+# Migrate the Models
+
+<ul>
+    <li>python manage.py makemigrations</li>
+    <li>python manage.py migrate</li>
+</ul>
+
 # Create a Superuser
 
 python manage.py createsuperuser
 
-# Migrate the Models
-
-python manage.py makemigrations
-python manage.py migrate
-
 # Start the Project
 
 python manage.py runserver
+
+# Key Points
+
+First Create a streamplatform than you can add websites to it and add reviews.
 
 # Usage
 
