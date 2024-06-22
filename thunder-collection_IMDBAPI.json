@@ -1,0 +1,504 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "IMDBAPI",
+    "collectionId": "f381a51b-44df-4360-b9c7-c7937859720d",
+    "dateExported": "2024-06-22T16:48:44.429Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "acbd5d7c-7a75-462b-82a7-7e389b3fc390",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-06-17T14:30:20.103Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "Streamplatform",
+            "containerId": "",
+            "created": "2024-06-17T15:19:57.867Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Weblist",
+            "containerId": "",
+            "created": "2024-06-17T14:36:31.864Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "Reviews",
+            "containerId": "",
+            "created": "2024-06-17T15:29:33.974Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "92a94e72-db75-4e85-89cb-c8bc78200ac4",
+            "name": "Filter using",
+            "containerId": "",
+            "created": "2024-06-18T06:42:20.322Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "25076ac1-001b-4344-af45-15f448fafa7c",
+            "name": "django-filter",
+            "containerId": "",
+            "created": "2024-06-19T06:23:33.200Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "99c2e2bf-023a-4fd1-8220-5a745541f884",
+            "name": "GenerateRandomData",
+            "containerId": "",
+            "created": "2024-06-19T18:24:44.004Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2f254427-0ed7-43ef-b557-146ed544fa9b",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "acbd5d7c-7a75-462b-82a7-7e389b3fc390",
+            "name": "registration",
+            "url": "http://127.0.0.1:8000/account/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-17T14:30:42.585Z",
+            "modified": "2024-06-17T14:36:04.696Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Jack"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jack@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Jack"
+                    },
+                    {
+                        "name": "password2",
+                        "value": "Jack"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "4e83866b-50e9-4ef7-ac6b-70d3b242b5ff",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Watchlist",
+            "url": "http://127.0.0.1:8000/watchlist/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-17T14:36:31.864Z",
+            "modified": "2024-06-17T17:46:01.460Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token afb6453a79d83274c368268906408db20660fd58"
+                }
+            ]
+        },
+        {
+            "_id": "6882c60c-d8e3-447f-bd0d-476ad4ece4be",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Create Watchlist",
+            "url": "http://127.0.0.1:8000/watchlist/",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-06-17T14:38:44.799Z",
+            "modified": "2024-06-17T14:48:16.453Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Thunder client movie\",\n  \"storyline\":\"Inbuild Testing tool\",\n  \"StreamingPlatform\": 1,\n  \"active\":true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e22fd5f8-6253-46b5-8617-3e699069c24f",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "acbd5d7c-7a75-462b-82a7-7e389b3fc390",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/account/login/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-17T14:33:06.576Z",
+            "modified": "2024-06-17T18:23:37.092Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Jack\",\n  \"password\":\"Jack\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "56a66f4c-133c-40ef-8058-083d82a7c4e6",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Watchlist/Id",
+            "url": "http://127.0.0.1:8000/watchlist/1/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-17T14:36:31.865Z",
+            "modified": "2024-06-17T14:38:35.261Z",
+            "headers": []
+        },
+        {
+            "_id": "b69a3643-877f-484e-9a4e-d9d093afd661",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "acbd5d7c-7a75-462b-82a7-7e389b3fc390",
+            "name": "logout",
+            "url": "http://127.0.0.1:8000/account/logout/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-17T14:34:18.234Z",
+            "modified": "2024-06-17T15:49:15.860Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ]
+        },
+        {
+            "_id": "185a7d78-7223-4ca3-b47a-93f87172fe66",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Watchlist/Id ",
+            "url": "http://127.0.0.1:8000/watchlist/4/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-06-17T15:13:50.356Z",
+            "modified": "2024-06-17T15:18:19.466Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Thunder client movie\",\n  \"storyline\":\"Inbuild Testing tool\",\n  \"StreamingPlatform\":\"2\",\n  \"active\":true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8d8764ed-3efe-49d4-8121-ec543fa72650",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "d6bc99fa-2b69-4ac3-950a-aadc6017fc9d",
+            "name": "Watchlist/Id ",
+            "url": "http://127.0.0.1:8000/watchlist/4/",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-06-17T15:13:53.081Z",
+            "modified": "2024-06-17T15:19:05.599Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ]
+        },
+        {
+            "_id": "297debd5-52ad-49d2-8825-cdc8053f6ae1",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "streamplatforms",
+            "url": "http://127.0.0.1:8000/streamplatforms/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-06-17T15:20:11.040Z",
+            "modified": "2024-06-17T15:21:00.066Z",
+            "headers": []
+        },
+        {
+            "_id": "8e88b52c-6ef1-45ae-ac1c-e3949d2ceae2",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "streamplatforms",
+            "url": "http://127.0.0.1:8000/streamplatforms/",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-06-17T15:25:26.258Z",
+            "modified": "2024-06-22T14:58:49.449Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 4ad28146525ea54ea2baf9b61ceea25594eb922d"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"HotStar\",\n  \"about\":\"This is the new hotstar site.\",\n  \"website\":\"https://hotstar.com/\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d05f4c62-1b79-4fa1-934b-dedc7a5e9a02",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "streamplatforms/Id",
+            "url": "http://127.0.0.1:8000/streamplatforms/4",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-06-17T15:21:16.562Z",
+            "modified": "2024-06-22T14:56:28.439Z",
+            "headers": []
+        },
+        {
+            "_id": "d7b201b2-5aa6-4a18-9114-1e2122703f72",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "streamplatforms/Id",
+            "url": "http://127.0.0.1:8000/streamplatforms/8/",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-06-17T15:22:16.978Z",
+            "modified": "2024-06-22T14:59:18.114Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 4ad28146525ea54ea2baf9b61ceea25594eb922d"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"This is brand new\",\n  \"about\":\"This is brand new---updated\",\n  \"website\":\"https://brand.com/\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "386c706b-384f-4829-be55-6322583d4bf0",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "045d14a4-10b1-4a68-82dc-6ef5bee9749d",
+            "name": "streamplatforms/Id",
+            "url": "http://127.0.0.1:8000/streamplatforms/8/",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-06-17T15:27:22.482Z",
+            "modified": "2024-06-22T15:00:20.896Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 4ad28146525ea54ea2baf9b61ceea25594eb922d"
+                }
+            ]
+        },
+        {
+            "_id": "1212eaab-1e15-48af-a444-85eeca925fd3",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "Review-create",
+            "url": "http://127.0.0.1:8000/2/review-create",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-06-17T15:29:50.225Z",
+            "modified": "2024-06-22T15:22:24.441Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 4ad28146525ea54ea2baf9b61ceea25594eb922d"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rating\":4,\n  \"description\":\"Brock is my fav. wrestler\",\n  \"active\":true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b98e27a3-19da-452b-a021-bd42b2e07468",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "ReviewsForMovies",
+            "url": "http://127.0.0.1:8000/2/review",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-06-17T15:35:24.850Z",
+            "modified": "2024-06-22T15:23:56.255Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token afb6453a79d83274c368268906408db20660fd58"
+                }
+            ]
+        },
+        {
+            "_id": "94af9f95-a235-44e7-a00c-5cf39dfacd98",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "Review-create/Id",
+            "url": "http://127.0.0.1:8000/watchlist/reviews/2/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-06-17T15:37:02.692Z",
+            "modified": "2024-06-17T17:06:58.284Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token afb6453a79d83274c368268906408db20660fd58"
+                }
+            ]
+        },
+        {
+            "_id": "c5a62abf-8b65-4d77-9a02-cf63ce4d37cb",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "Review-create/Id ",
+            "url": "http://127.0.0.1:8000/watchlist/reviews/8/",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-06-17T15:38:31.922Z",
+            "modified": "2024-06-17T15:45:29.439Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rating\": 1,\n  \"description\":\"Good Movie---updated\",\n  \"active\":true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bc8f6534-2f58-4eb2-96c6-9e48342ed1bb",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "88dbf702-7513-4d8c-8dd8-68f70a147948",
+            "name": "Review-create/Id  Copy",
+            "url": "http://127.0.0.1:8000/watchlist/reviews/8/",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-06-17T15:45:56.300Z",
+            "modified": "2024-06-17T15:47:44.594Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 7c1377c412ddbf4eef82dfe8e2a931996f4c91a8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rating\": 1,\n  \"description\":\"Good Movie---updated\",\n  \"active\":true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "658dadd6-65fe-4e23-9c9a-04942e54c786",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "92a94e72-db75-4e85-89cb-c8bc78200ac4",
+            "name": "User",
+            "url": "http://127.0.0.1:8000/review/Mann",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-06-18T06:42:36.110Z",
+            "modified": "2024-06-22T15:26:14.234Z",
+            "headers": []
+        },
+        {
+            "_id": "d0d04e46-d59a-4eb4-b56b-7b996f7f91eb",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "92a94e72-db75-4e85-89cb-c8bc78200ac4",
+            "name": "Rating",
+            "url": "http://127.0.0.1:8000/watchlist/reviews/?rating=4",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-06-18T06:43:47.300Z",
+            "modified": "2024-06-18T07:17:46.341Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "rating",
+                    "value": "4",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "cb2ae339-5b3f-49ce-970d-921ec7a5b60d",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "25076ac1-001b-4344-af45-15f448fafa7c",
+            "name": "django-filter",
+            "url": "http://127.0.0.1:8000//watchlist/djangofilter/?avg_rating=3.5",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-06-19T06:23:45.202Z",
+            "modified": "2024-06-19T06:29:20.882Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "avg_rating",
+                    "value": "3.5",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "b97d8b75-ee26-4ff6-b394-8d2c9a50a8a8",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "25076ac1-001b-4344-af45-15f448fafa7c",
+            "name": "django-search",
+            "url": "http://127.0.0.1:8000//watchlist/djangofilter/?search=sport",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-06-19T06:44:03.239Z",
+            "modified": "2024-06-19T06:58:39.715Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "sport",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "908d6ca1-0ef0-40dd-b6a6-eb41052a3f39",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "25076ac1-001b-4344-af45-15f448fafa7c",
+            "name": "django-ordering",
+            "url": "http://127.0.0.1:8000//watchlist/djangofilter/?ordering=-number_Of_Ratings",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-06-19T07:01:50.057Z",
+            "modified": "2024-06-19T07:03:21.322Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "ordering",
+                    "value": "-number_Of_Ratings",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "d570e357-5055-4f6e-99a7-209b541b928f",
+            "colId": "f381a51b-44df-4360-b9c7-c7937859720d",
+            "containerId": "99c2e2bf-023a-4fd1-8220-5a745541f884",
+            "name": "generateWatchlist",
+            "url": "http://127.0.0.1:8000/watchlist/generate/",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2024-06-19T18:24:59.390Z",
+            "modified": "2024-06-19T18:25:45.622Z",
+            "headers": []
+        }
+    ],
+    "ref": "WxNv7ZRObMCzXMtFzizYJGnOdYcI_U4hDa91zsaQ7b1FB9qmMK-8LGlQ4jnsJUSfcSbCM7aEGoqlXweYKXebqA"
+}
